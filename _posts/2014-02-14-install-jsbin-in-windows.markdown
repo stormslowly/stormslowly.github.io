@@ -11,12 +11,12 @@ It can be installed in local, but have lot of problems in windows.
 ``npm install jsbin -g``
 	may(must) have serval problemes, we must install it manually.
 
-#####Clone jsbin
+###Clone jsbin
 ```
 git clone https://github.com/jsbin/jsbin.git
 cd jsbin
 ```
-####solve sqlite compile error
+###solve sqlite compile error
 
 #####config jsbin to use mysql adapter instead of sqlite
 in file ``config.default.json``,change ``"adapter": "sqlite",`` to ``"adapter": "mysql",``
@@ -36,12 +36,12 @@ and don't forget to edit the mysql configure below.
 ##### remove sqlite dependency
 in ``package.json`` remove line `    "sqlite3": "~2.1.19",`
 
-#### install jsbin locally
+### install jsbin locally
 ```
 cd ..
 npm install jsbin -g
 ```
-#### fix replify bug
+### fix replify bug
 in your `NODE_PATH` find `jsbin\node_modules\replify\replify.js`
 line 94 from 96
 ```
@@ -51,13 +51,13 @@ if (err && err.code !== 'EEXIST') {
 ```
 change `replPath` to `options.replPath`
 
-#### init mysqldb config
+### init mysqldb config
 
 ```
 cd jsbin/build
 mysql -uroot -p < full-db-v3.mysql.sql
 ```
-#### enjoy jsbin
+### enjoy jsbin
 
 ```
 > jsbin
