@@ -67,7 +67,7 @@ Loaded custom config: Seb Lee-Delise
 JS Bin v3.10.7 is up and running on port 3000. Now point your browser at http://localhost:3000
 repl server error { [Error: listen EACCES] code: 'EACCES', errno: 'EACCES', syscall: 'listen' }
 ```
-go to [localhost:3000](http://127.0.0.1:3000)
+go to [localhost:3000](http://localhost:3000)
 
 
 ## Refs
