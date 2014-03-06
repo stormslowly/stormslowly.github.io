@@ -34,6 +34,6 @@ categories: youtube
 ## 完！
 ----
 ## 捐赠
-如果您觉得本文对您有帮助，欢迎请译者一杯咖啡
+如果您觉得本文对您有帮助，欢迎请作者一杯咖啡
 
 [![捐赠EventProxy](https://img.alipay.com/sys/personalprod/style/mc/btn-index.png)](https://me.alipay.com/shupengfei)
