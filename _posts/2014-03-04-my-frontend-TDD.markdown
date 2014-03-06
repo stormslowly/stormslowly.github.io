@@ -87,7 +87,7 @@ describe('fist test',function() {
 });
 ```
 
-Karma的配置文件加载了Mocha和Chai，在测试文件中就不需要像node.js一样``require('xxx')``了。如果你的karma配置文件中``autoWatch``是 ``true``的话，当你保存文件之后Karma就告诉你的Case在两个浏览器里面执行的结果了。
+Karma的配置文件加载了Mocha和Chai，在测试文件中就不需要像node.js一样``require('xxx')``了。如果你的karma配置文件中``autoWatch``是``true``的话，当你保存文件之后Karma就告诉你的Case在两个浏览器里面执行的结果了。
 
 
 ```
