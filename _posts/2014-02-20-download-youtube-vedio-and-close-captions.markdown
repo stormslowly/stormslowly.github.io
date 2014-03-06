@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to download youtube vedio and its close caption"
+title:  "下载Youtube视频和CC字幕"
 date:   2014-02-20 12:28:12
 categories: youtube
 ---
