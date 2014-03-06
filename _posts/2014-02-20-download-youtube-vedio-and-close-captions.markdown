@@ -32,3 +32,8 @@ categories: youtube
 这样就讲google CC文件转换成srt字幕文件，在播放视频的时候加载就是了。
 
 ## 完！
+----
+## 捐赠
+如果您觉得本文对您有帮助，欢迎请译者一杯咖啡
+
+[![捐赠EventProxy](https://img.alipay.com/sys/personalprod/style/mc/btn-index.png)](https://me.alipay.com/shupengfei)
