@@ -8,13 +8,13 @@ categories: stack
 原文地址:<http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918>
 
 
-Web应用的开发涉及到很多相关的技术和工具，比如数据库操作、服务器管理、前端的数据的显示等等。开始一个新项目的时候，就需要花费一些时间在这些工具和项目目录的创建上。这个时候我就需要框架或者工具组合来加速开发。
+Web应用的开发涉及到很多相关的技术和工具，比如数据库操作、服务器管理、前端数据的显示等等。开始一个新项目的时候就需要花费一些时间在这些工具和项目目录的创建上。这个时候我就需要框架或者工具组合来加速开发。
 
 
 ##什么是MEAN
-[MEAM][mean]是基于javascript现代web应用全栈开发工具。
+“[MEAM][mean]是基于javascript现代web应用全栈开发工具。”
 
-这是[MEAM][mean]的作者对它下的定义。MEAN就是瞄准给前后端的Javascript工程师使用的，这个工具集主要包括下面几个部分
+这是[MEAM][mean]的作者对它下的定义。可以看出MEAN是瞄准给前后端的Javascript工程师使用的，这个工具集主要包括下面几个部分
 
 * [MongoDB](http://www.mongodb.org/)
 * [Express](http://expressjs.com/)
@@ -46,7 +46,9 @@ git clone https://github.com/linnovate/mean.git
 ```
 npm install -g generator-meanstack
 ```
+
 然后生成项目
+
 ```
 yo meanstack
 ```
@@ -56,11 +58,11 @@ yo meanstack
 Addy Osmani写了一篇关于MEAN和它的生成器的博客。强烈推荐，看了之后就知道如何安装和使用MEAN的生成器了。
 
 
-为了本文的目的，采用Git clone的方式来安装演示。
+为了教程演示的目的，本文采用Git clone的方式来安装演示。
 
 ##安装收尾
 
-在命令行进去到安装(克隆)好MEAN的目录(译者注：记得先安装下所需要node模块，``npm install``)，然后执行``grunt``命令(我想你一定已经安装过``grunt-cli``了吧)。grunt会启动一个监听3000端口的Web服务器，浏览器里面看看``http://localhost:3000``。
+在命令行进入到安装(克隆)好MEAN的目录(译者注：记得先安装下所需要node模块，``npm install``)，然后执行``grunt``命令(我想你一定已经安装过``grunt-cli``了吧)。grunt会启动一个监听3000端口的Web服务器，浏览器里面看看<http://localhost:3000>。
 
 ![meanpage](https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/45/posts/19918/image/site.jpeg)
 
@@ -108,18 +110,18 @@ MEAN默认是一个blog应用引擎，支持多种认证的方式：Facebook、G
 
 ![viewstruct](https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/45/posts/19918/image/views.jpeg)
 
-``includes``目录包web应用页面的页眉页脚。``layout``目录是页面的布局文件，这个布局文件应用到``view``目录下``index.html``。
+``includes``目录包web应用页面的页眉页脚。``layout``目录是页面的布局文件，这个布局文件应会用到``view``目录下``index.html``。
 
 ``users``目录包含注册登陆的页面代码。
 
-在``views``根目录，除了``index.html```还有404和500的页面。
+在``views``根目录，除了``index.html``还有404和500的页面。
 
 ###客户端
 客户端的文件都在``public``目录下，``css``和``img``目录分别包含项目的样式文件和图片文件。
 
 特别要注意下``js``目录，里面包含了AngularJS代码，如初始化，指令，过滤器(目前都是空的)，还有默人blog应用创建的控制器和服务。``views``目录下是为blog应用中articles创建，编辑，查看的页面。
 
-``lib``目录是AngularJS库的代码。
+``lib``目录中是AngularJS库的代码。
 
 
 ##测试
@@ -136,7 +138,7 @@ MEAN默认是一个blog应用引擎，支持多种认证的方式：Facebook、G
 
 ###译者赠送一视频。
 如果等不及tuts的第二篇教程，可以看看这个是视频
-<http://tagtree.tv/mean-stack-episode1> 和 对以的代码<https://github.com/hendrikswan/tagtree-mean> 不过需要翻墙和twitter账号。
+<http://tagtree.tv/mean-stack-episode1>(不过需要翻墙和twitter账号。)和 对以的代码<https://github.com/hendrikswan/tagtree-mean>
 
 ---
 ## 捐赠
