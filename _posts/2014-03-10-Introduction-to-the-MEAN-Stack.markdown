@@ -138,7 +138,7 @@ MEAN默认是一个blog应用引擎，支持多种认证的方式：Facebook、G
 
 ###译者赠送一视频。
 如果等不及tuts的第二篇教程，可以看看这个是视频
-<http://tagtree.tv/mean-stack-episode1>(不过需要翻墙和twitter账号。)和 对以的代码<https://github.com/hendrikswan/tagtree-mean>
+<http://tagtree.tv/mean-stack-episode1>(不过需要翻墙和twitter账号。)和对应的代码<https://github.com/hendrikswan/tagtree-mean>
 
 ---
 ## 捐赠
