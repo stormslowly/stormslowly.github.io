@@ -29,13 +29,15 @@ AngularJs团队有多重视测试呢，无论是[AngularJS项目本身](https://
 下面这个视频，看了你就懂了
 
 P.S Karma原先的名字叫*Testacular*
+P.P.S Karma在墙内安装请看[这里](http://stormslowly.github.io/editor/2014/03/03/my-frontend-TDD.html)
 
-P.P.S 翻译字幕真是累啊
+P.P.P.S 翻译字幕真是累啊
 
 <embed src="http://player.youku.com/player.php/sid/XNjg0MTM2NDQ4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
 ##福利
-有下载癖的同学，视频和字幕文件都在这里 <http://pan.baidu.com/s/1mgFhVza>。另外还有一个Karma的介绍视频。
+有下载癖的同学，视频和字幕文件都在这里 <http://pan.baidu.com/s/1mgFhVza>。
+另外还有一个Karma的介绍视频。
 
 ----
 ## 捐赠
