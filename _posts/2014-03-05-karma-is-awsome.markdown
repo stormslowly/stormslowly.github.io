@@ -33,6 +33,8 @@ P.P.S Karma在墙内安装请看[这里](http://stormslowly.github.io/editor/201
 
 P.P.P.S 翻译字幕真是累啊
 
+<http://v.youku.com/v_show/id_XNjg0MTM2NDQ4.html>
+
 <embed src="http://player.youku.com/player.php/sid/XNjg0MTM2NDQ4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
 ##福利
