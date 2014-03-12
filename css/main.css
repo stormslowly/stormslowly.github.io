@@ -51,6 +51,12 @@ a:visited { color: #a0a; }
 /* Site
 /*
 /*****************************************************************************/
+#fork{
+  position:fixed;
+  top:0;
+  right:0;
+  _position:absolute;
+}
 
 .site {
   font-size: 115%;
