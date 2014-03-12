@@ -34,6 +34,8 @@ P.P.S 翻译字幕真是累啊
 
 <embed src="http://player.youku.com/player.php/sid/XNjg0MTM2NDQ4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
+##福利
+有下载癖的同学，视频和字幕文件都在这里 <http://pan.baidu.com/s/1mgFhVza>。另外还有一个Karma的介绍视频。
 
 ----
 ## 捐赠
