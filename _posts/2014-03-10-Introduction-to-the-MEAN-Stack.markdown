@@ -12,9 +12,9 @@ Web应用的开发涉及到很多相关的技术和工具，比如数据库操�
 
 
 ##什么是MEAN
-“[MEAM][mean]是基于javascript现代web应用全栈开发工具。”
+“[MEAN][mean]是基于javascript现代web应用全栈开发工具。”
 
-这是[MEAM][mean]的作者对它下的定义。可以看出MEAN是瞄准给前后端的Javascript工程师使用的，这个工具集主要包括下面几个部分
+这是[MEAN][mean]的作者对它下的定义。可以看出MEAN是瞄准给前后端的Javascript工程师使用的，这个工具集主要包括下面几个部分
 
 * [MongoDB](http://www.mongodb.org/)
 * [Express](http://expressjs.com/)
