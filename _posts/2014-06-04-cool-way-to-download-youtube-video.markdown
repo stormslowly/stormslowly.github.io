@@ -23,14 +23,32 @@ Thu Jun 05 2014 21:09:46 GMT+0800 (China Standard Time)
 d:\usrbin\youtube-dl.exe %* --proxy "https://127.0.0.1:8080" --write-sub  --no-mtime  --output %%(title)s_%%(resolution)s.%%(ext)s  --no-part --all-subs --restrict-filenames
 ```
 
-选项|含义
----|----
---proxy| 在天朝你没个代理你怎么混啊
---write-sub| 下载字幕，这里的字幕是用户上传的字幕，不是youtube自动生成的CC字幕
---all-subs | 如果有字幕的话，就下载所有字幕，收集癖:)
---restrict-filenames| 避免在下载的文件名中使用:等特殊字符
---no-mtime | 不修改文件的mtime，文件的更新时间为下载的时间，这样方便管理
---output| 下载文件命名模板，还是为了方便管理
+
+<table>
+    <tr>
+        <td><strong>选项</strong></td><td><strong>含义</strong></td>
+    </tr>
+
+    <tr>
+        <td>proxy</td><td>在天朝你没个代理你怎么混啊</td>
+    </tr>
+    <tr>
+        <td>write-sub</td><td>下载字幕，这里的字幕是用户上传的字幕，不是youtube自动生成的CC字幕</td>
+    </tr>
+    <tr>
+        <td>all-subs</td><td>如果有字幕的话，就下载所有字幕，收集癖:)</td>
+    </tr>
+    <tr>
+        <td>restrict-filenames</td><td>避免在下载的文件名中使用:等特殊字符</td>
+    </tr>
+    <tr>
+        <td>no-mtime</td><td>不修改文件的mtime，文件的更新时间为下载的时间，这样方便管理</td>
+    </tr>
+    <tr>
+        <td>output</td><td>下载文件命名模板，还是为了方便管理</td>
+    </tr>
+
+</table>
 
 >注意: youtube-dl默认是再下载清晰度最高的视频源。如果代理速度不好的还是通过`--format`选项来指定下载那个清晰度的文件
 
