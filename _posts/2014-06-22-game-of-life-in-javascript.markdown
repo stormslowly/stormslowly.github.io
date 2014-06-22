@@ -9,8 +9,8 @@ categories: javascript gameoflife
 
 <div id="game"></div>
 
-<script type="text/javascript" src="//raw.githubusercontent.com/craftyjs/Crafty/0.6.2/dist/crafty-min.js"></script>
-<script type="text/javascript" src="//raw.githubusercontent.com/stormslowly/gameoflife.js/master/gof.js"></script>
+<script type="text/javascript" src="//rawgit.com/craftyjs/Crafty/0.6.2/dist/crafty-min.js"></script>
+<script type="text/javascript" src="//rawgit.com/stormslowly/gameoflife.js/master/gof.js"></script>
 
 
 ### have fun~
