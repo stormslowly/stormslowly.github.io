@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "使用sails.js和angular.js快速构建网络原型"
+title:  "使用sails.js和angular.js快速构建网络应用原型"
 date:   2014-08-07 12:50:12
 categories: prototype sails.js yo
 ---
@@ -103,6 +103,6 @@ angular.module('webApp')
 </div>
 ```
 
-## 刷新 <http://localhost:9000/#/item>
+### 刷新 <http://localhost:9000/#/item>
 
 暂时一个粗糙的概念.
