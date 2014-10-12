@@ -39,6 +39,12 @@ toHex(55)  // '37'
 toHex(-1)  // 'ffffffff'
 
 ```
+## Ref
+
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_%28Zero-fill_right_shift%29>
+
 ---
+
+
 
 End
