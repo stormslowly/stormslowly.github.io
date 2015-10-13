@@ -110,6 +110,42 @@ blockquote p {
   color: #000;
 }
 
+.bits {
+  list-style: none;
+  font-size: 0;
+  margin-bottom: 10px;
+}
+
+.introduce{
+  margin-top: 20px;
+}
+
+.bits li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 10px;
+  text-align: center;
+  border: 1px dashed black;
+  border-radius: 3px;
+}
+
+.bits li:nth-child(even){
+  background: black;
+  color: white;
+}
+
+.bits:nth-child(odd){
+  background: white;
+  color: black;
+}
+
+.byte{
+  text-align: right;
+}
+
+
 .meta {
   color: #aaa;
 }
@@ -174,3 +210,5 @@ blockquote p {
 .post pre.terminal code {
   background-color: #333;
 }
+
+
