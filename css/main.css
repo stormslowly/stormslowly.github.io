@@ -21,7 +21,7 @@ body {
 
 h1,h2,h3,h4 { margin-bottom: 1em; }
 
-h2 {font-size: 2em;}
+h2 {font-size: 2em; line-height: initial;}
 
 hr {margin: 10px 0;}
 
@@ -209,6 +209,22 @@ blockquote p {
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+.donate{
+  width:42em;
+  margin: 5em auto;
+}
+
+.donate img{
+  width: 21em;
+  display: block;
+  margin: 0 auto;
+}
+
+.donate h2{
+  line-height: initial;
+  text-align: center
 }
 
 
