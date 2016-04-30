@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[afterCode] a bug with Array.sort"
-date:   2016-10-26 10:50:00
+date:   2016-04-30 13:38:00
 categories:  afterCode node.js sort
 ---
 
