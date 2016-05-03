@@ -192,6 +192,11 @@ blockquote p {
   margin-left: 1.35em;
 }
 
+code.highlighter-rouge {
+    background-color: #ccc;
+    color: #a10;
+}
+
 .post code {
   padding: 0 .2em;
 }

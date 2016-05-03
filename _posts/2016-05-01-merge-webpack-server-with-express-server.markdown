@@ -7,7 +7,9 @@ categories:  afterCode node.js webpack
 
 解决的问题
 1. `webpack hot module reload`在某些情况下无法自动更新 react 应用
+
 2. 对已有的服务侵入式的修改.
+
 3. 开发时需要在两个端口上启动两个服务器,一个`backend server`一个`webpack devserver`
 
 ## 方法
