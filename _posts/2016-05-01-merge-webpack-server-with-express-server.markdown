@@ -16,16 +16,9 @@ categories:  afterCode node.js webpack
 
 ### webpack config
 
-`webpack.config.js` 采用[react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate/blob/master/webpack.config.js)
-
-注意修改自己的`entry`中服务器的地址和端口,直接改成`backend server`的ip和端口
-
-`output.publicPath` 也要修改成`backend server`中对应的静态文件的路径,如
-
-`publicPath: 'http://127.0.0.1:4000/dist/'`
+`webpack.config.js` 采用[react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate/blob/master/webpack.config.js) 注意修改自己的`entry`中服务器的地址和端口,直接改成`backend server`的ip和端口 `output.publicPath` 也要修改成`backend server`中对应的静态文件的路径,如`publicPath: 'http://127.0.0.1:4000/dist/'`
 
 ## backend server的修改
-
 
 已有的`backend server` express server 导出为 `backendApp`.
 
@@ -72,5 +65,4 @@ app.listen(port, function () {
 ```
 
 这样就能在开发阶段只需要开启`backend server`就能享受`webpack devserver`带来的自动重新编译功能和gaearon大神带来的react reload.
-
 
