@@ -232,4 +232,6 @@ code.highlighter-rouge {
   text-align: center
 }
 
-
+.hljs{
+  border-radius: 5px;
+}

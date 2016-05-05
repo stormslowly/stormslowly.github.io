@@ -7,9 +7,8 @@ categories:  afterCode node.js array
 
 
 # 目标
-``` javascript
+``` JavaScript
 function createArrayWith(length,value){...}
-
 
 createArrayWith(2,3) => [3, 3]
 createArrayWith(2,{test:2}) => [{test:2}, {test:2}]
@@ -20,8 +19,7 @@ createArrayWith(2,{test:2}) => [{test:2}, {test:2}]
 
 # 首先想到的是map
 
-```javascript
-
+```JavaScript
 function createArrayWith(length,value){
    return new Array(length).map(function(){
    		return value
@@ -31,7 +29,7 @@ function createArrayWith(length,value){
 
 ## 失败
 
-```javascript
+```JavaScript
 createArrayWith(2,3) 
 [ , ]
 ```
@@ -48,7 +46,7 @@ from <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_O
 
 观察`Array` 构造函数的接口
 
->```javascript
+>```JavaScript
 new Array(element0, element1[, ...[, elementN]])
 new Array(arrayLength)
 ```
@@ -57,7 +55,7 @@ new Array(arrayLength)
 
 ## 用apply试试
 
-```javascript
+```JavaScript
 function createArrayWith(length,value){
    return Array.apply(null,new Array(length)).map(function(){
    		return value
@@ -71,7 +69,7 @@ createArrayWith(2,3)
 
 ### 使用ES6的语法简化下
 
-```javascript
+```JavaScript
 function createArrayWith(length,value){
    return Array.apply(null,new Array(length)).map(()=>value)
 }
@@ -82,7 +80,7 @@ createArrayWith(2,3)
 
 ### 好像`new`也可以去掉
 
-```javascript
+```JavaScript
 function createArrayWith(length,value){
    return Array.apply(null,Array(length)).map(()=>value)
 }
@@ -97,7 +95,7 @@ createArrayWith(2,3)
 
 在[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) 过`Array` 方法的时候,发现了居然有这个一个[函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)
 
-```javascript 
+```JavaScript 
 arr.fill(value[, start = 0[, end = this.length]])
 ```
 
@@ -106,7 +104,7 @@ arr.fill(value[, start = 0[, end = this.length]])
 在ES6的环境下的话,最简洁的方式还是 
 
 
-```javascript
+```JavaScript
 function createArrayWith(length,value){
    return new Array(length).fill(value)
 }
