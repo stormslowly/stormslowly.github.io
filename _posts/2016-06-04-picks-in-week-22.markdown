@@ -18,11 +18,11 @@ $copy($('h4 a').toArray().map((i)=>$(i).attr('href')).join('\n'))
 ```
 以上命令来获得需要的url列表,一来方便,二来可以避免但url过长出现`...`导致youtube-dl无法正常下载的情况
 
-##下载 `.m3u` 流
+## 下载 `.m3u` 流
 
 直接把`.m3u`的地址给 `youtube-dl` 即可
 
-# React 
+# React
 
 ## `key`属性
 
