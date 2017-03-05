@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[翻译] noSQL 注入
+title:  "[翻译] noSQL 注入"
 date:   2017-03-04 11:50:00
 categories:  afterCode nosql injection
 ---
