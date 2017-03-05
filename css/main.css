@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 
-h1,h2,h3,h4 { margin-bottom: 1em; }
+h1,h2,h3,h4 { margin-bottom: 1em; margin-top: 1em;}
 
 h2 {font-size: 2em; line-height: initial;}
 
