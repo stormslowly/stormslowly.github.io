@@ -5,7 +5,7 @@ date:   2017-03-04 11:50:00
 categories:  afterCode nosql injection
 ---
 
-<iframe height="500" width="100%" src="http://player.youku.com/embed/XMjU5NjEwNzM0MA==" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="sixteen-nine"><iframe height="100%" width="100%" class="content" src="http://player.youku.com/embed/XMjU5NjEwNzM0MA==" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 
 
 以前一直有印象 mongodb 的查询不同于 sql 的查询,因为没有字符串拼接不会出现类似 sql 注入的问题. 但是这个视频一个简单的例子就给出了 noSQL 环境下的注入的思路.

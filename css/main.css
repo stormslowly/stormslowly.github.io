@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 
-h1,h2,h3,h4 { margin-bottom: 1em; margin-top: 1em;}
+h1,h2,h3,h4 { margin-bottom: 1em; margin-top: 1em; text-align: start;}
 
 h2 {font-size: 2em; line-height: initial;}
 
@@ -80,7 +80,7 @@ blockquote p {
   text-align: justify;
   padding: 2em;
   max-width: 42em;
-  margin: 3em auto 2em;
+  margin: 0em auto 0em;
   line-height: 1.5em;
 }
 
@@ -91,7 +91,7 @@ blockquote p {
 
 .title {
   display: inline-block;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .title a {
@@ -237,3 +237,33 @@ code.highlighter-rouge {
 .hljs{
   border-radius: 5px;
 }
+
+.sixteen-nine {
+  position: relative;
+}
+.sixteen-nine:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+.sixteen-nine > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  #fork{display: none;}
+  .introduce{display: none;}
+
+}
+
