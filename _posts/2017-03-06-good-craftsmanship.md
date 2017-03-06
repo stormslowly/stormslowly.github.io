@@ -15,7 +15,7 @@ categories:  afterCode craftsmanship
 
 ### 附上视频
 
-<iframe height="498" width="510" src="http://player.youku.com/embed/XMjYwMjg4NTQ1Mg==" frameborder="0" allowfullscreen="allowfullscreen" ></iframe>
+<iframe height="498" width="100%" src="http://player.youku.com/embed/XMjYwMjg4NTQ1Mg==" frameborder="0" allowfullscreen="allowfullscreen" ></iframe>
 
 
 # 完
