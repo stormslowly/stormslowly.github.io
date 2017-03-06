@@ -14,7 +14,7 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
+  font: 13.34px "Open Sans", "Hiragino Sans GB", sans-serif;;
   font-size: small;
   text-align: center;
 }
@@ -78,7 +78,8 @@ blockquote p {
 .site {
   font-size: 115%;
   text-align: justify;
-  width: 42em;
+  padding: 2em;
+  max-width: 42em;
   margin: 3em auto 2em;
   line-height: 1.5em;
 }
@@ -193,12 +194,12 @@ blockquote p {
 }
 
 code.highlighter-rouge {
-    background-color: #ccc;
-    color: #a10;
+    background-color: #ddd;
+    color: #000;
 }
 
 .post code {
-  padding: 0 .2em;
+  padding: 0 .4em;
 }
 
 .post pre code {
@@ -218,16 +219,17 @@ code.highlighter-rouge {
 
 .donate{
   width:42em;
-  margin: 5em auto;
+  margin: 2em auto;
 }
 
 .donate img{
-  width: 21em;
+  width: 15em;
   display: block;
   margin: 0 auto;
 }
 
 .donate h2{
+  font-size: 1em;
   line-height: initial;
   text-align: center
 }
