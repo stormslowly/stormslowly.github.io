@@ -27,6 +27,12 @@ hr {margin: 10px 0;}
 
 p { margin: 1em 0; }
 
+
+p img{
+  width: 100%;
+  border-radius: 5px;
+}
+
 a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
