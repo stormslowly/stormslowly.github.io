@@ -1,3 +1,4 @@
 name: After code
 markdown: kramdown
 rouge: true
+future: true
