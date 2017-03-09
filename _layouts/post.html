@@ -1,12 +1,39 @@
 ---
 layout: default
 ---
+
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
 {{ content }}
 </div>
+
+<div class="footer">
+    <div class="contact">
+      <p>
+        Shu Pengfei<br />
+        A.K.A super<br />
+        stormslowly(#)gmail.com
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="https://github.com/stormslowly">github.com/stormslowly</a><br />
+        <a href="http://weibo.com/superfeicn">weibo.com/superfeicn</a><br />
+      </p>
+    </div>
+</div>
+
+<div class="PageNavigation">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% endif %}
+</div>
+
 
 
 <div id="disqus_thread"></div>

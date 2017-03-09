@@ -23,14 +23,14 @@ createArrayWith(2,{test:2}) => [{test:2}, {test:2}]
 function createArrayWith(length,value){
    return new Array(length).map(function(){
    		return value
-   })
+   })
 }
 ```
 
 ## 失败
 
 ```JavaScript
-createArrayWith(2,3) 
+createArrayWith(2,3)
 [ , ]
 ```
 
@@ -59,7 +59,7 @@ new Array(arrayLength)
 function createArrayWith(length,value){
    return Array.apply(null,new Array(length)).map(function(){
    		return value
-   })
+   })
 }
 
 // 可行
@@ -71,7 +71,7 @@ createArrayWith(2,3)
 
 ```JavaScript
 function createArrayWith(length,value){
-   return Array.apply(null,new Array(length)).map(()=>value)
+   return Array.apply(null,new Array(length)).map(()=>value)
 }
 
 createArrayWith(2,3)
@@ -82,7 +82,7 @@ createArrayWith(2,3)
 
 ```JavaScript
 function createArrayWith(length,value){
-   return Array.apply(null,Array(length)).map(()=>value)
+   return Array.apply(null,Array(length)).map(()=>value)
 }
 
 createArrayWith(2,3)
@@ -95,13 +95,13 @@ createArrayWith(2,3)
 
 在[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) 过`Array` 方法的时候,发现了居然有这个一个[函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)
 
-```JavaScript 
+```JavaScript
 arr.fill(value[, start = 0[, end = this.length]])
 ```
 
 顿时草泥马奔腾,原来ES6添加了这个新函数.
 
-在ES6的环境下的话,最简洁的方式还是 
+在ES6的环境下的话,最简洁的方式还是
 
 
 ```JavaScript
