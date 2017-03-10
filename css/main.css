@@ -274,6 +274,12 @@ code.highlighter-rouge {
 
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .PageNavigation {
   font-size: 14px;
   display: block;
