@@ -8,7 +8,7 @@ categories:  afterCode webstorm tips
 
 ## TLDR;
 
-Promoise的错误处理不当, 会导致很多隐藏的Bug. 所以在 Node.js 6.6.0 之后, 如果原生的Promise 没有catch Rejection 就会在 console 打印一条警告; 可以监听 Node 进程 `unhandledRejection` 事件来获得 Rejection 的 Error 信息和关闭警告. Async/await 可以让Promise处理更加方便, 但是也一定 catch async 函数的返回的Promise; async 函数的返回的是一个原生的Promise, 无法被替换成其他第三方的 Promise 实现. 
+Promise的错误处理不当, 会导致很多隐藏的Bug. 所以在 Node.js 6.6.0 之后, 如果原生的Promise 没有catch Rejection 就会在 console 打印一条警告; 可以监听 Node 进程 `unhandledRejection` 事件来获得 Rejection 的 Error 信息和关闭警告. Async/await 可以让Promise处理更加方便, 但是也一定 catch async 函数的返回的Promise; async 函数的返回的是一个原生的Promise, 无法被替换成其他第三方的 Promise 实现. 
 
 
 译文
