@@ -15,8 +15,7 @@ Typescript: 简单点说就是一个 JavaScript 的超集，这个超集合里�
 开始使用 ts 很方便，直接用 npm 或者 windows 下的 NuGet 就可以了
 
 ```
-npm install -g typescript 
-
+npm install -g typescript
 ```
 
 在编辑支持方面 Visual Stuido 系列通过升级包就能支持最新 ts 版本，毕竟微软自己的产品嘛；其他编辑器如 visual studio code 和 sublime text 对有对应的插件。(我个人推荐使用 webstorm)
