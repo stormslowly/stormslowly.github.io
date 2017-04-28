@@ -18,14 +18,14 @@ Typescript: 简单点说就是一个 JavaScript 的超集，这个超集合里�
 npm install -g typescript
 ```
 
-在编辑支持方面 Visual Stuido 系列通过升级包就能支持最新 ts 版本，毕竟微软自己的产品嘛；其他编辑器如 visual studio code 和 sublime text 对有对应的插件。(我个人推荐使用 webstorm)
+在编辑支持方面 Visual Stuido 系列通过升级包就能支持最新 ts 版本，毕竟微软自己的产品嘛；其他编辑器如 visual studio code 和 sublime text 有对应的插件。(我个人推荐使用 webstorm)
 
 下面介绍2.3的一些新特性
 
 
 ### 增加 JavaScript 的 _检查_ 支持
 
-为了让用用户能从 js 到 ts 平滑过渡，原先能通过 `--allowJs` 来支持 ts 和 js 文件的混合在一起编译，对js部分是完全不做类型检查的。 ts 2.3 可以通过两种方式来实现对混合在一起的 js 文件一起做类型检查，但这个检查应该不会很严格（原文是说 a new “soft” form of checking）
+为了让用户能从 js 到 ts 平滑过渡，原先能通过 `--allowJs` 来支持 ts 和 js 文件的混合在一起编译，对js部分是完全不做类型检查的。 ts 2.3 可以通过两种方式来实现对混合在一起的 js 文件一起做类型检查，但这个检查应该不会很严格（原文是说 a new “soft” form of checking）
 
 第一种方法是在 js 文件头上打上 `// @ts-check`
 
@@ -114,7 +114,7 @@ class Component<P, S = object> {
 ```
 甚至直接写 `Component<FooProps>`, 等效于  Component<FooProps, object>
 
-类型的默认值并不需要和类型完全一致,只要他可以配置给此类型的变量就行了, 换句话说: 默认值只要是该类型的子集即可.
+类型的默认值并不需要和类型完全一致,只要他可以赋值给此类型的变量就行了, 换句话说: 默认值只要是该类型的"子类"即可.
 
 
 ### Generator 和 async generator 的支持
