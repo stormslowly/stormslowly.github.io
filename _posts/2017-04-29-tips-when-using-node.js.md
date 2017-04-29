@@ -30,7 +30,8 @@ HomeAway 高级软件经理
 
 ![Wyatt](https://raw.githubusercontent.com/stormslowly/stormslowly.github.io/master/imgs/tips/steven.jpg)
 
-###Steven Faulkner
+### Steven Faulkner
+
 Bustle 工程总监
 > 刚开始学习 node 的时候多看看你使用模块的代码,研究它背后的工作原理; node 界也有很多多产的开发者, 他们开发了很多不同类型的模块, 多读读他们的代码以理解他们背后的思想.
 
