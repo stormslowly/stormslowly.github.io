@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[简译] 外国大厂node.js工程师对 node 用户的建议"
+title:  "[简译] 外国大厂对node.js工程师的建议"
 date:   2017-04-29 10:50:00
 categories:  node.js tips 翻译
 ---
