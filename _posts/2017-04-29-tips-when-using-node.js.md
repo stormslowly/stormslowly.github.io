@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[简译] 外国大厂node.js工程师对 node 用户的建议"
-date:   2017-04-28 10:50:00
+date:   2017-04-29 10:50:00
 categories:  node.js tips 翻译
 ---
 
@@ -29,6 +29,7 @@ HomeAway 高级软件经理
 
 
 ![Wyatt](https://raw.githubusercontent.com/stormslowly/stormslowly.github.io/master/imgs/tips/steven.jpg)
+
 ###Steven Faulkner
 Bustle 工程总监
 > 刚开始学习 node 的时候多看看你使用模块的代码,研究它背后的工作原理; node 界也有很多多产的开发者, 他们开发了很多不同类型的模块, 多读读他们的代码以理解他们背后的思想.
@@ -59,7 +60,7 @@ GoDaddy 技术总监
 
 WildwWorks 工程师
 
-1. 在可能出现异常的地方正确的处理异常
+>1. 在可能出现异常的地方正确的处理异常
 2. 当你的应用处于一个未知状态的时候,毫不留情的重启你的服务进程
 3. 一定要有测试;在你提交代码后有自动化执行的测试.
 4. js 是动态类型的语言, 所以一定要有严格的数据检查;确保进入你的应用的数据是你期望的, 特别是在 API 层面
@@ -117,6 +118,8 @@ WildwWorks
 
 哈哈,个人感觉没有掌握 js 去使用类似 ts 的语言的话确实造成一些问题. 至于 dart 之类我没有用过也不能发表什么.
 
+
 #完
+
 
 希望对大家有帮助.
