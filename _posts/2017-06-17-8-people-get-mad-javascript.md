@@ -3,7 +3,6 @@ layout: post
 title:  "[afterCode] 我为 JS 狂 nested loops jsconfig 开场表演"
 date:   2017-06-17 10:50:00
 categories:  JavaScript nested loops open show
-
 ---
 
 如果有人告诉你告诉他可以把音乐和视觉艺术融合在一起, 你一定会觉得没什么稀奇的.但是如果再告诉你这个融合是一群程序员做的, 而且是用他们写JavaScript代码做的你一定会想看看是什么效果吧.
