@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[afterCode] 我为 JS 狂 nested loops jsconfig 开场表演"
+title:  "[afterCode] 我为 JS 狂 nested loops EU JSconf 开场表演"
 date:   2017-06-17 10:50:00
 categories:  JavaScript nested loops open show
 ---
