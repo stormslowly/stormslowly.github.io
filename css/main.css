@@ -193,7 +193,12 @@ blockquote p {
 
 /* standard */
 .post pre {
+  width: 110%;
+  margin-left: -10%;
   padding: 0 .4em;
+  padding-left: 5%;
+  padding-right: 5%;
+
 }
 
 .post ul, .post ol {
