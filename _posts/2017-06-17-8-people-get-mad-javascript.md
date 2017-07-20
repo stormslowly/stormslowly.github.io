@@ -37,4 +37,4 @@ categories:  JavaScript nested loops open show
 #完
 
 
-希望对大家喜欢.
+希望大家喜欢.
