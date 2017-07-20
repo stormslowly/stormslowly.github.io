@@ -21,6 +21,11 @@ body {
 
 h1,h2,h3,h4 { margin-bottom: 1em; margin-top: 1em; text-align: start;}
 
+h1:before{
+  content: '#';
+  margin-left: -0.7em;
+}
+
 h2 {font-size: 2em; line-height: initial;}
 
 hr {margin: 10px 0;}
