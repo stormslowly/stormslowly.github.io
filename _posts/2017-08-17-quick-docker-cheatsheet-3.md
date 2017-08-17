@@ -9,7 +9,7 @@ categories:  aftercode docker cheatsheet
 
 # 通过端口访问 container 中的服务
 
-通过 tcp 端口的方式来使用 container 提供的服务是最简单的了.只要通过 `-p` 或者 `--publish` 选项来向宿主机暴露服务端口.
+通过端口的方式来使用 container 提供的服务是最简单的了.只要通过 `-p` 或者 `--publish` 选项来向宿主机暴露服务端口就可以了.
 
 比如我们可以这样在后台启动一个 redis 服务.并将 container 中的 redis 的服务端口6379映射到宿主机上的7788端口.
 ```
@@ -35,13 +35,13 @@ aftercode  editor     index.html nodejs     stack      unittest
 cat2       feed.xml   javascript prototype  test       youtube
 ```
 
-我们就可以通过 `-v` 选项来当前地址的绝对路径,映射到 container 中的 `/usr/share/nginx/html`.这样 nginx 启动的时候使用就是我们 `_site` 静态资源了;当然了最后还是要将 nginx 的 80 映射到宿主机的3009端口上,这样就能在本地 `http://127.0.0.1:3009` 端口访问本 blog 了.
+我们就可以通过 `-v` 选项来将当前目录的绝对路径映射到 container 中的 `/usr/share/nginx/html`.这样 nginx 启动的时候使用的就是我们 `_site` 文件夹中的静态资源了;当然了最后还要将 nginx 的 80 映射到宿主机的3009端口上,才能在本地 `http://127.0.0.1:3009` 端口访问 web 服务.
 
 ```bash
 docker run --rm -v $PWD/_site:/usr/share/nginx/html -p 3009:80 nginx
 ```
 
-通过 -v 选项主要注意的就是: 宿主机需要映射的地址必须使用***绝对地址***; 如果需要映射多个路径的可以和映射端口的方式来通过 `-v` 来完成映射.
+通过 -v 选项主要注意的就是: 宿主机需要映射的地址必须使用***绝对地址***来指定; 如果需要映射多个路径的可以使用和映射端口的方式通过多个 `-v` 来完成映射.
 
 
 
