@@ -9,7 +9,7 @@ categories:  aftercode docker cheatsheet
 
 那这些***名人***是谁呢?
 
-源代码说明一切[/pkg/namesgenerator/names-generator.go#L105]
+源代码说明一切 [ /pkg/namesgenerator/names-generator.go#L105 ]
 (https://github.com/moby/moby/blob/b5f68d7ed3a2a9db7bdbfd3bdee42d9d1a7e5423/pkg/namesgenerator/names-generator.go#L105)
 
 >// Docker, starting from 0.7.x, generates names from notable scientists and hackers.
@@ -22,24 +22,22 @@ categories:  aftercode docker cheatsheet
 
 每个名人名字前面都会有1句很简单的介绍,然后带上对应的 wiki 的链接. 先翻译几个大家耳熟能详的几个名字吧.
 
-```go
+```
+// Nikola Tesla invented the AC electric system and every gadget ever used by a James Bond villain. https://en.wikipedia.org/wiki/
+// 特斯拉: 发明了交流电和所有007反派使用的
+"tesla",
 
-		// Nikola Tesla invented the AC electric system and every gadget ever used by a James Bond villain. https://en.wikipedia.org/wiki/Nikola_Tesla
-	   // 特斯拉: 发明了交流电和所有007反派使用的武器
-		"tesla",
+// Ken Thompson - co-creator of UNIX and the C programming language - https://en.wikipedia.org/wiki/Ken_Thompson
+// 汤普森:  unix 和 C 的联合创始人.(笔者注: 堪称程序员的祖师爷)
+"thompson",
 
-		// Ken Thompson - co-creator of UNIX and the C programming language - https://en.wikipedia.org/wiki/Ken_Thompson
-		// 汤普森:  unix 和 C 的联合创始人.(笔者注: 堪称程序员的祖师爷)
-		"thompson",
+// Linus Torvalds invented Linux and Git. https://en.wikipedia.org/wiki/Linus_Torvalds
+// 林纳斯: geek 之神 发明了 linux 和 git
+"torvalds",
 
-		// Linus Torvalds invented Linux and Git. https://en.wikipedia.org/wiki/Linus_Torvalds
-		// 林纳斯: geek 之神 发明了 linux 和 git
-		"torvalds",
-
-		// Alan Turing was a founding father of computer science. https://en.wikipedia.org/wiki/Alan_Turing.
-	   // 图灵: 计算机科学之父. (14年的电影: [模仿游戏](https://movie.douban.com/subject/10463953/) 非常值得一看)
-		"turing",
-
+// Alan Turing was a founding father of computer science. https://en.wikipedia.org/wiki/Alan_Turing.
+// 图灵: 计算机科学之父. (14年的电影: [模仿游戏](https://movie.douban.com/subject/10463953/) 非常值得一看)
+"turing",
 ```
 
 当然除了人名之外还有93个超有意思的形容词,背好这几个单词赞扬别人的时候就不怕词穷;当然骂别人也一样不怕没词. : p
