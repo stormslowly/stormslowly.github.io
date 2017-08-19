@@ -9,11 +9,9 @@ categories:  aftercode docker cheatsheet
 
 那这些***名人***是谁呢?
 
-源代码说明一切 [ /pkg/namesgenerator/names-generator.go#L105 ]
-(https://github.com/moby/moby/blob/b5f68d7ed3a2a9db7bdbfd3bdee42d9d1a7e5423/pkg/namesgenerator/names-generator.go#L105)
+源代码说明一切 [/pkg/namesgenerator/names-generator.go#L105](https://github.com/moby/moby/blob/b5f68d7ed3a2a9db7bdbfd3bdee42d9d1a7e5423/pkg/namesgenerator/names-generator.go#L105)
 
 >// Docker, starting from 0.7.x, generates names from notable scientists and hackers.
-
 >// Please, for any amazing man that you add to the list, consider adding an equally amazing woman to it, and vice versa.
 
 自 0.7.x docker 用一些著名的科学家和黑客名字来命名容器. 如果有你认为有还没有在这些列表中的话,给 docker 项目提交. 哈哈,想给牛逼项目提交 pr 吗? 又多了一个路子.
