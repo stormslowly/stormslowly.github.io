@@ -73,7 +73,7 @@ $ docker  run --network supernet --name hello  --rm  pshu/helloworld:1.0.0
 
 接着创建一个 `default.conf` 文件作为 nginx 服务器的反向代理配置文件, 将所有http 请求代理到 hello 容器的3000端口上.
 
-```nginx.confg
+```nginx.config
 server {
     listen       8080;
     server_name  localhost;
