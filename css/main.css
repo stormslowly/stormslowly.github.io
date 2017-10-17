@@ -310,3 +310,9 @@ blockquote p {
 .PageNavigation .next {
   text-align: right;
 }
+
+
+.year{
+  margin-bottom: 0;
+  text-shadow: #ddd 3px 4px 4px;
+}

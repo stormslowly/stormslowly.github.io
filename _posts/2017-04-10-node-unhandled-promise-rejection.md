@@ -2,7 +2,7 @@
 layout: post
 title:  "[翻译] node.js 的 UnhandledPromiseRejectionWarning"
 date:   2017-04-05 10:50:00
-categories:  afterCode webstorm tips
+categories:  afterCode node.js promise
 ---
 
 
