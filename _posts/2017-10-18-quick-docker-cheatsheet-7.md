@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[afterCode] docker 速成班 7: 实战 构建基于gratie/grafana监控应用"
+title:  "[afterCode] docker 速成班 7: 实战 构建基于graphtie/grafana监控应用"
 date:   2017-10-18 10:50:00
 categories:  aftercode docker cheatsheet
 ---
