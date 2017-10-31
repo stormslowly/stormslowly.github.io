@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "pytorch神经网络重构"
+title:  "[afterCode]pytorch神经网络重构"
 date:   2017-10-20 10:50:00
 categories:  aftercode pytorch
 ---
