@@ -28,8 +28,8 @@ if(Array.isArray(allOrOne)){
 
 typescript 是根据什么知道数据的类型呢? 虽然从语言角度看 `Array.isArray` 的返回值 `boolean`,
 如果仅仅是 `boolean` 是不能判断出上下文的数据类型的. 查看 `Array.isArray` 的定义可以发现, 
-这这里并没有使用 `boolean` 而是采用 `arg is Array<any>` 的方式这样的话就能根据函数返回值来推倒出
-当前的数据类型
+这这里并没有使用 `boolean` 而是采用 `arg is Array<any>` 的方式这样的话就能根据函数返回值来推导出
+当前的数据类型.
  
 ```typescript
 // lib.d.ts
@@ -59,6 +59,19 @@ function foo(x: number | string) {
 
 
 # 组合 组合 组合 
+
+在实际使用中,我们经常会调用第三方的API, 调用的时候经常会根据调用的结果是否正常来处理不同的逻辑.
+最常见的一个例子就是
+
+```typescript
+interface APIResponse{
+    error: boolean
+    errorMessage?:string
+    data?: number[]
+}
+```
+
+
 
 
 # 完
