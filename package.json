@@ -1,0 +1,23 @@
+{
+  "name": "stormslowly.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stormslowly/stormslowly.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stormslowly/stormslowly.github.io/issues"
+  },
+  "homepage": "https://github.com/stormslowly/stormslowly.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^0.3.0"
+  }
+}
