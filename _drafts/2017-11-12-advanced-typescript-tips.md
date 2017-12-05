@@ -60,7 +60,7 @@ function foo(x: number | string) {
 
 # 组合 组合 组合 
 
-在实际使用中,我们经常会调用第三方的API, 调用的时候经常会根据调用的结果是否正常来处理不同的逻辑.
+在实际开发中,我们经常会调用第三方的API, 调用的时候经常会根据调用的结果是否正常来处理不同的逻辑.
 最常见的一个例子就是
 
 ```typescript
@@ -71,6 +71,43 @@ interface APIResponse{
 }
 ```
 
+如果 API 调用正常, error 为 `false`, 那么就是在 data 成员中获取对应的数据; 如果调用失败 error 为 `true`, 到 errorMessage 中
+获取错误信息.
+ 
+在代码中使用这个类型的变量的话,各个字段都是可选的(因为带着`?`), 那 typescript 就不能帮助推断出当error 为 true 时, 只有 data 字段可以使用,而 errorMessage 是无效的.
+如何让 typescript 也能理解这个类型字段和字段的关系呢?
+
+
+```typescript
+interface SuccessAPIResponse{
+  error: false
+  data: number[]
+}
+
+
+interface ErrorAPIResponse {
+  error: true
+  errorMessage:string
+}
+
+type APIResponse =  SuccessAPIResponse | ErrorAPIResponse 
+```
+
+那在使用 APIResponse 类型的数据的时候, typescript 的类型保护就能理解代码所处的逻辑位置, 然后根据对应具体类型来分析代码, 比如 
+
+
+```typescript
+
+const res : APIResponse
+
+if(res.error){
+  console.log(res.errorMessage)
+  console.log(res.data)  // Error ErrorAPIResponse dont have attribute data
+}else{
+  console.log(res.data)  // ok
+  console.log(res.errorMessage)
+}
+```
 
 
 
