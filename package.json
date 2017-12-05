@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/stormslowly/stormslowly.github.io#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
     "tailwindcss": "^0.3.0"
   }
 }
