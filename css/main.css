@@ -4228,8 +4228,94 @@ button,
   z-index: auto;
 }
 
+.site {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  max-width: 600px;
+}
+
+@media (min-width: 1200px) {
+  .site {
+    padding: 0;
+  }
+}
+
+.year {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.5rem;
+  color: #222b2f;
+  text-shadow: #ddd 3px 4px 4px;
+}
+
+.posts {
+  list-style: none;
+  padding: 0;
+}
+
+.posts li {
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+}
+
+.posts li > span {
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  color: #70818a;
+  font-weight: 200;
+  font-size: .875rem;
+  width: 2.5rem;
+}
+
+.posts li > a {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #222b2f;
+  font-size: .875rem;
+  text-decoration: none;
+}
+
+.posts li > a:visited {
+  color: #9babb4;
+  text-decoration: none;
+}
+
+.posts li > a:hover {
+  color: #6574cd;
+  text-decoration: none;
+}
+
 .introduce {
-  margin-top: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: none;
+}
+
+#fork {
+  display: none;
+}
+
+.header {
+  padding: 2rem;
+  height: 8rem;
+}
+
+.header .title > a {
+  color: #cc1f1a;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  #fork {
+    display: block;
+  }
+
+  .introduce {
+    display: block;
+  }
+
+  .header {
+    padding: 2rem;
+    height: auto;
+  }
 }
 
 .bits li {
@@ -4254,7 +4340,35 @@ button,
 }
 
 .byte {
+  font-size: 1.125rem;
   text-align: right;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-top-width: 2px;
+  border-color: #dae4e9;
+  padding-top: 1rem;
+  color: #222b2f;
+}
+
+.footer div:first-child {
+  text-align: right;
+}
+
+.contact {
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.hljs {
+  border-radius: 5px;
+  border-radius: .125rem;
 }
 
 @media (min-width: 576px) {
