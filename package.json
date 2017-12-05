@@ -21,6 +21,7 @@
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
+    "gulp-uglifycss": "^1.0.9",
     "gulp-util": "^3.0.8",
     "tailwindcss": "^0.3.0"
   }

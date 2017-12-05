@@ -1077,6 +1077,14 @@ gulp-postcss@^7.0.0:
     postcss-load-config "^1.2.0"
     vinyl-sourcemaps-apply "^0.2.1"
 
+gulp-uglifycss@^1.0.9:
+  version "1.0.9"
+  resolved "http://registry.npm.taobao.org/gulp-uglifycss/download/gulp-uglifycss-1.0.9.tgz#4d58cca04251c3f1e0140fb2a5dcbe8bebb21244"
+  dependencies:
+    gulp-util "^3.0.8"
+    through2 "^2.0.3"
+    uglifycss "^0.0.25"
+
 gulp-util@^3, gulp-util@^3.0.0, gulp-util@^3.0.8:
   version "3.0.8"
   resolved "http://registry.npm.taobao.org/gulp-util/download/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
@@ -2891,7 +2899,7 @@ through2@^0.6.1, through2@^0.6.3, through2@~0.6.1:
     readable-stream ">=1.0.33-1 <1.1.0-0"
     xtend ">=4.0.0 <4.1.0-0"
 
-through2@^2, through2@^2.0.0:
+through2@^2, through2@^2.0.0, through2@^2.0.3:
   version "2.0.3"
   resolved "http://registry.npm.taobao.org/through2/download/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
   dependencies:
@@ -2941,6 +2949,10 @@ tunnel-agent@^0.6.0:
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "http://registry.npm.taobao.org/tweetnacl/download/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
+
+uglifycss@^0.0.25:
+  version "0.0.25"
+  resolved "http://registry.npm.taobao.org/uglifycss/download/uglifycss-0.0.25.tgz#bea72bf4979eacef13a302cf47b2d1af3f344197"
 
 uid-number@^0.0.6:
   version "0.0.6"

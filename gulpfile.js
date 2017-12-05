@@ -3,6 +3,9 @@ const postcss = require("gulp-postcss");
 const tailwindcss = require("tailwindcss");
 const gutil = require('gulp-util')
 const plumber = require('gulp-plumber')
+const uglifycss = require('gulp-uglifycss');
+
+
 const PATHS = {
     css: "./src/style/main.css",
     config: "./tailwind.js",
@@ -13,15 +16,15 @@ gulp.task("css", () => {
     return gulp
         .src(PATHS.css)
         .pipe(plumber(function (error) {
-			console.log(error);
-			this.emit('end');
-		}))
+            console.log(error);
+            this.emit('end');
+        }))
         .pipe(postcss(
             [
                 tailwindcss(PATHS.config),
                 require("autoprefixer")
             ]))
-        .on('error', gutil.log)
+        .pipe(uglifycss({"maxLineLen": 80, "uglyComments": true}))
         .pipe(gulp.dest(PATHS.dist));
 });
 
