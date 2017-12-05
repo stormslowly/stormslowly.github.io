@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[afterCode]typescript 高级技巧"
+title:  "[afterCode]typescript 技巧三则"
 date:   2017-12-06 10:50:00
 categories:  aftercode typescript tips
 ---
