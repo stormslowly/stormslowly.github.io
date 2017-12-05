@@ -4,7 +4,7 @@
 
 .site{
     @apply .mx-auto .p-2;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 
