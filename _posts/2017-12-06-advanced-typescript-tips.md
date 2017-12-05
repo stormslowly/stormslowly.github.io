@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "[afterCode]typescript 高级技巧"
-date:   2017-11-12 10:50:00
+date:   2017-12-06 10:50:00
 categories:  aftercode typescript tips
 ---
 
-#0x0 不只是 boolean
+# 不是简单的 boolean
 
 ```typescript
 function getAllOrOne<T>(i: T[]): T[] | T {
@@ -37,7 +37,7 @@ interface ArrayConstructor {
     ...
     isArray(arg: any): arg is Array<any>;
     ...
-    }
+}
 ```
 
 像 `Array.isArray` 的函数叫做 `类型保护(type guard)` 函数. 
@@ -93,23 +93,85 @@ interface ErrorAPIResponse {
 type APIResponse =  SuccessAPIResponse | ErrorAPIResponse 
 ```
 
-那在使用 APIResponse 类型的数据的时候, typescript 的类型保护就能理解代码所处的逻辑位置, 然后根据对应具体类型来分析代码, 比如 
-
+那再使用 APIResponse 类型的数据的时候, typescript 的类型保护就能理解代码所处的逻辑位置, 然后根据对应具体类型来分析代码, 比如 
+根据***不同的类型***来做代码自动补全.
 
 ```typescript
-
 const res : APIResponse
 
 if(res.error){
   console.log(res.errorMessage)
-  console.log(res.data)  // Error ErrorAPIResponse dont have attribute data
+  console.log(res.data)  // Error: ErrorAPIResponse dont have attribute data
 }else{
   console.log(res.data)  // ok
-  console.log(res.errorMessage)
+  console.log(res.errorMessage)  // Error: SuccessAPIResponse dont have attribute errorMessage
 }
 ```
 
+这样的方式其实也是体现的了***组合优于继承*** 的设计思路.与其把 Response 搞成一个"超级类", 还不如分而治之.每个类负责一个比较小的 case, 然后通过组合的方式
+合成一个 Response 类型.
 
+# Never think about Never
+
+在代码中我们经常会是用枚举 `Enums`, 比如下面的例子,通过枚举来完成不同的 adapter 创建. 
+
+```typescript
+enum Protocol{
+   http = 1,
+   https = 2,
+   ftp = 3
+} 
+function makeAdapter(p:Protocol){
+  
+  switch (p) {
+    case Protocol.ftp:
+        console.log('make ftp adapter')
+      break;
+      
+   case Protocol.http:
+      console.log('make http adapter')
+      break;
+      
+   default:
+     console.log('should never happen');
+     throw  Error('unSupport Protocol')
+  }
+}
+```
+
+这段代码如果在运行时接收到 https 参数的话, 那么就会抛出异常;但是显然 https 是支持的协议,不应该抛出异常的.原因在于我们忘记在 switch-case 
+中忘记写对应 https 的代码. 那如何在写代码直接就能在编译时就发现这个问题呢?
+
+```typescript
+
+function shouldNotBeHere(t:never){
+  console.log('should never happen');
+  throw  Error('unSupport Protocol'+ t)
+}
+
+function makeAdapter(p:Protocol){
+  
+  switch (p) {
+    case Protocol.ftp:
+        console.log('make ftp adapter')
+      break;
+      
+   case Protocol.http:
+      console.log('make http adapter')
+      break;
+      
+   default:
+    shouldNotBeHere(p)
+  }
+}
+
+```
+
+这样做的话 typescript 就能推倒出, 当传入的枚举 p 为 https, 就和函数 `shouldNotBeHere` 的参数类型不匹配了; 因为 https 的类型不是 never. 
+直接在编译时就发现了这个问题;而且这样做的另外一个好处就时, 当你的枚举添加了一个新的类型的时候, 如果 switch-case 的 default 的部分实现了never 的函数
+typescript 就是提醒你有新的 case 需要实现.
 
 # 完
+
+希望这个三个小技巧能够帮大家挖掘出 typescript 更多的福利,在写代码时获得更多的便利.
 希望大家喜欢.
