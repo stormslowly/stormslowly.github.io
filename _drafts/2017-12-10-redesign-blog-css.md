@@ -47,6 +47,7 @@ npx tailwind init
 
 
 ```css
+/* file src/main.css */
 @tailwind preflight;
 @tailwind utilities;
 /* 从这里开始你的设计吧 */
