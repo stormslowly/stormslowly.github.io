@@ -76,11 +76,14 @@
     }
 }
 
-h2 {
-    @apply .text-grey-darkest .text-3xl .mb-1;
-}
+
 
 h1,h2,h3,h4 { margin-bottom: 1em; margin-top: 1em; text-align: start;}
+
+h2 {
+    @apply .text-grey-darkest .text-3xl;
+    margin-bottom: 0;
+}
 
 .post h1:before{
   content: '#';
@@ -96,7 +99,7 @@ h1,h2,h3,h4 { margin-bottom: 1em; margin-top: 1em; text-align: start;}
 }
 
 .post > p {
-    @apply .text-grey-darker .my-4 .px-2;
+    @apply .font-sans .text-black .text-sm .text-grey-darker .my-4 .px-2;
 }
 
 .post code.highlighter-rouge {
