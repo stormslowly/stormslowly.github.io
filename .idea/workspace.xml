@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fddd21e9-a4ef-4c8b-bda8-51d080cef24a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/_drafts/2017-12-25-npm-vs-maven.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -86,7 +85,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="223" />
+    <option name="x" value="221" />
     <option name="y" value="44" />
     <option name="width" value="1591" />
     <option name="height" value="933" />
@@ -107,6 +106,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,8 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,19 +192,19 @@
       <workItem from="1512454628879" duration="10060000" />
       <workItem from="1512610462865" duration="598000" />
       <workItem from="1512611452254" duration="600000" />
-      <workItem from="1512697194644" duration="5788000" />
+      <workItem from="1512697194644" duration="5832000" />
+      <workItem from="1512958529833" duration="574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34700000" />
+    <option name="totallyTimeSpent" value="35318000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="223" y="44" width="1591" height="933" extended-state="0" />
-    <editor active="true" />
+    <frame x="221" y="44" width="1591" height="933" extended-state="0" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26081342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2640413" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -382,7 +381,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="672">
             <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -509,7 +507,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1260">
             <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="57" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
