@@ -7,9 +7,7 @@ categories:  aftercode typescript
 
 ## 问题
 
-重构一个 ts 项目.
-
-原来的代码是这样的
+重构一个 ts 项目,原来的代码是这样的.
 
 ```typescript
 class SUT {
